@@ -68,12 +68,11 @@ var options = {
     "zip": "application/zip, application/x-compressed-zip",
     "txt": "text/plain"
   }
-  /* Uncomment and edit this section to provide the service via HTTPS:
+  /* Uncomment and edit this section to provide the service via HTTPS: */
    ssl: {
-   key: fs.readFileSync('/Applications/XAMPP/etc/ssl.key/server.key'),
-   cert: fs.readFileSync('/Applications/XAMPP/etc/ssl.crt/server.crt')
+   key: fs.readFileSync('/etc/letsencrypt/live/dev.joshjoe.com/privkey.pem'),
+   cert: fs.readFileSync('/etc/letsencrypt/live/dev.joshjoe.com/fullchain.pem')
    },
-   */
 };
 
 
